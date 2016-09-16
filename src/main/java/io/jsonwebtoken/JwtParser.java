@@ -36,6 +36,7 @@ public interface JwtParser {
      *
      * @return the parser for method chaining.
      * @see ExpiredJwtException
+     * @since 0.7.1
      */
     JwtParser ignoreExpiry();
 
@@ -46,6 +47,7 @@ public interface JwtParser {
 
      * @return the parser for method chaining.
      * @see PrematureJwtException
+     * @since 0.7.1
      */
     JwtParser ignoreNotBefore();
 
@@ -56,6 +58,7 @@ public interface JwtParser {
      *
      * @return the parser for method chaining.
      * @see SignatureException
+     * @since 0.7.1
      */
     JwtParser ignoreSignature();
 
